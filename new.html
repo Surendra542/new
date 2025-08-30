@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        function square()
+        {
+            let a = document.getElementById("num1").value;
+            document.getElementById("data1").innerHTML = a * a ;
+
+        }
+        function qube()
+        {
+            let b = document.getElementById("num1").value;
+            document.getElementById("data1").innerHTML = b * b * b ;
+
+        }
+        function clr()
+        {
+            document.getElementById("num1").value="";
+            document.getElementById("data1").innerHTML="";
+
+        }
+       
+    </script>
+    <form>
+        <input type="text" id="num1" placeholder="enter value">
+        <button type="buttom" onclick="square()">Square</button>
+        <button type="buttom" onclick="qube()">Qube</button>
+        <button type="buttom" onclick="clr()">Clear</button>
+          <p id="data1"></p>
+    </form>
+      
+</body>
+</html>
